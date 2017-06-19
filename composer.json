@@ -1,0 +1,45 @@
+{
+	"name": "do-while/contao-ce_be_remarks",
+	"description":"Backend Remarks for Contao OpenSource CMS",
+	"keywords":["contao", "contentelement", "remarks"],
+	"type": "contao-contentelement",
+	"homepage":"https://www.softleister.de",
+	"license":"LGPL-3.0+",
+	"authors":[
+		{
+			"name": "Hagen Klemp",
+			"email": "info@softleister.de",
+			"homepage": "https://www.softleister.de",
+			"role":"Project leader"
+		}
+	],
+	"support":{
+		"issues":"https://github.com/do-while/contao-ce_be_remarks/issues",
+		"wiki":"http://http://de.contaowiki.org/Ce_be_remarks",
+		"source":"https://github.com/do-while/contao-ce_be_remarks"
+	},
+	"require": {
+		"contao/core": ">=3.5 || ~4.4",
+		"contao-community-alliance/composer-plugin":"~2.4 || ~3.0"
+	},
+	"replace": {
+		"contao-legacy/ce_be_remarks": "*"
+	},
+	"autoload":{
+		"classmap":["system/"],
+		"psr-4": {
+			"do-while\\contao-ce_be_remarks\\": "system/modules/ce_be_remarks/src/"
+		}
+	},
+	"extra": {
+		"contao": {
+			"sources": {
+				"system/modules/ce_be_remarks": "system/modules/ce_be_remarks"
+			}
+		},
+		"branch-alias": {
+			"dev-master": "3.5.x-dev",
+			"dev-dev": "3.5.x-dev"
+		}
+	}
+}
