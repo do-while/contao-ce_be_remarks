@@ -1,0 +1,15 @@
+<?php $headline = unserialize($this->headline); ?>
+<?php if( TL_MODE == 'BE'): ?>
+<div class="<?php echo $this->class; ?> block"<?php echo $this->cssID; ?> style="<?php echo $this->style; ?> border:1px solid #8ab858; padding:5px; background-color:#fffeef;">
+
+<div class="image_container float_left" style="padding-right:20px; float:left;">
+<img src="system/modules/ce_be_remarks/html/<?php echo $this->remark_icon; ?>.png" width="48" height="48" title="<?php echo $GLOBALS['TL_LANG']['tl_content']['be_remark'][$this->remark_icon]; ?>" alt="" />
+</div>
+
+<?php if( !empty($headline['value']) ): ?>
+<<?php echo $headline['unit']; ?>><?php echo $headline['value']; ?></<?php echo $headline['unit']; ?>>
+<?php endif; ?>
+<?php echo $this->text; ?>
+
+</div>
+<?php endif; ?>
