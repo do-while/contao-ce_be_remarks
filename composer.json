@@ -15,7 +15,7 @@
 	],
 	"support":{
 		"issues":"https://github.com/do-while/contao-ce_be_remarks/issues",
-		"wiki":"http://http://de.contaowiki.org/Ce_be_remarks",
+		"wiki":"http://de.contaowiki.org/Ce_be_remarks",
 		"source":"https://github.com/do-while/contao-ce_be_remarks"
 	},
 	"require": {
