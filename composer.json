@@ -33,13 +33,13 @@
             "src/Resources/contao/templates/"
         ],
         "psr-4": {
-            "Softleister\\ce_be_remarksBundle\\": "src/"
+            "Softleister\\Ce_be_remarksBundle\\": "src/"
         }
     },
     "extra": {
         "branch-alias": {
             "dev-develop": "1.1.x-dev"
         },
-		"contao-manager-plugin": "Softleister\\ce_be_remarksBundle\\ContaoManager\\Plugin"
+		"contao-manager-plugin": "Softleister\\Ce_be_remarksBundle\\ContaoManager\\Plugin"
     }
 }
