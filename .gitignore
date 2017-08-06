@@ -1,19 +1,6 @@
-# OS
-.DS_Store
-Thumbs.db
-
-# IDEs 
+.git/
+#IDE
 .buildpath
 .project
 .settings/
-.build/
-.external*/
-.idea/
-nbproject/
-_notes/
 
-# composer related
-vendor/
-
-# build
-build/
