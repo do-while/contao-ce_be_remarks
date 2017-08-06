@@ -10,14 +10,16 @@
  */
 
 
-$GLOBALS['TL_DCA']['tl_content']['palettes']['be_remarks']     = '{type_legend},type,headline;{text_legend},remark_icon,text;';
+$GLOBALS['TL_DCA']['tl_content']['palettes']['be_remarks'] = '{type_legend},type,headline;{text_legend},remark_icon,text;';
 
 $GLOBALS['TL_DCA']['tl_content']['fields']['remark_icon'] = array
 (
     'label'                   => &$GLOBALS['TL_LANG']['tl_content']['remark_icon'],
-    'default'                 => 'info',
-    'inputType'               => 'select',
-    'options'                 => array('info', 'comment', 'warning', 'question', 'edit', 'accepted', 'add', 'cancel', 'camera', 'clock', 'lightbulb', 'lock', 'mail', 'search'),
+    'default'                 => 'show',
+    'exclude'                 => true,
+    'inputType'               => 'radioTable',
+    'options'                 => array('show', 'help', 'important', 'stop', 'error', 'edit', 'ok', 'delete', 'new', 'visible', 'featured', 'lock-locked'),
+    'eval'                    => array('cols'=>12),
     'reference'               => &$GLOBALS['TL_LANG']['tl_content']['be_remark'],
-    'sql'                     => "varchar(255) NOT NULL default 'info'"
+    'sql'                     => "varchar(16) NOT NULL default 'show'"
 );

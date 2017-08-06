@@ -1,15 +1,19 @@
 <?php $headline = deserialize($this->headline); ?>
 <?php if( TL_MODE == 'BE'): ?>
-<div class="<?= $this->class ?> block"<?= $this->cssID ?> style="<?= $this->style ?> border:1px solid #8ab858; padding:5px; background-color:#fffeef;">
+<!--- ce_be_remarks -->
+<div class="ce_be_remarks <?= $this->class ?> block"<?= $this->cssID ?> style="<?= $this->style ?> border:1px solid #8ab858; padding:5px; background-color:#fffeef;">
 
   <div class="image_container float_left" style="padding-right:20px; float:left;">
-    <img src="bundles/softleisterce_be_remarks/<?= $this->remark_icon ?>.png" width="48" height="48" title="<?= $GLOBALS['TL_LANG']['tl_content']['be_remark'][$this->remark_icon] ?>" alt="">
+    <img src="system/themes/flexible/icons/<?= $this->remark_icon ?>.svg" width="48" height="48" title="<?= $GLOBALS['TL_LANG']['tl_content']['be_remark'][$this->remark_icon] ?>" alt="">
   </div>
 
   <?php if( !empty($headline['value']) ): ?>
   <<?= $headline['unit'] ?>><?= $headline['value'] ?></<?= $headline['unit'] ?>>
   <?php endif; ?>
   <?= $this->text ?>
+  <div class="clear"></div>
 </div>
+<!--- END OF ce_be_remarks -->
+
 <?php endif; ?>
 

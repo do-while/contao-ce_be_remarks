@@ -9,6 +9,13 @@
  *
  */
 
+/**
+ * Add beckend style sheet
+ *
+ */
+if( TL_MODE == 'BE' ) {
+    $GLOBALS['TL_CSS'][] = 'bundles/softleisterce_be_remarks/remarkstyles.css';
+}
 
 /**
  * Content elements

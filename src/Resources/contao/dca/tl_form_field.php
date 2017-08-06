@@ -15,11 +15,13 @@ $GLOBALS['TL_DCA']['tl_form_field']['palettes']['be_remarks'] = '{type_legend},t
 $GLOBALS['TL_DCA']['tl_form_field']['fields']['remark_icon'] = array
 (
     'label'                   => &$GLOBALS['TL_LANG']['tl_form_field']['remark_icon'],
-    'default'                 => 'info',
-    'inputType'               => 'select',
-    'options'                 => array('info', 'comment', 'warning', 'question', 'edit', 'accepted', 'add', 'cancel', 'camera', 'clock', 'lightbulb', 'lock', 'mail', 'search'),
+    'default'                 => 'show',
+    'exclude'                 => true,
+    'inputType'               => 'radioTable',
+    'options'                 => array('show', 'help', 'important', 'stop', 'error', 'edit', 'ok', 'delete', 'new', 'visible', 'featured', 'lock-locked'),
+    'eval'                    => array('cols'=>12),
     'reference'               => &$GLOBALS['TL_LANG']['tl_form_field']['be_remark'],
-    'sql'                     => "varchar(255) NOT NULL default 'info'"
+    'sql'                     => "varchar(16) NOT NULL default 'show'"
 );
 
 $GLOBALS['TL_DCA']['tl_form_field']['fields']['headline'] = array
@@ -29,6 +31,6 @@ $GLOBALS['TL_DCA']['tl_form_field']['fields']['headline'] = array
     'search'                  => true,
     'inputType'               => 'inputUnit',
     'options'                 => array('h1', 'h2', 'h3', 'h4', 'h5', 'h6'),
-    'eval'                    => array('maxlength'=>255),
-    'sql'                     => "varchar(255) NOT NULL default ''"
+    'eval'                    => array('maxlength'=>255, 'tl_class'=>'w50 clr'),
+    'sql'                     => "varchar(8) NOT NULL default ''"
 );

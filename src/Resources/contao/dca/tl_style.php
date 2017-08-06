@@ -27,11 +27,13 @@ $GLOBALS['TL_DCA']['tl_style']['fields']['beremark'] = array
 $GLOBALS['TL_DCA']['tl_style']['fields']['remark_icon'] = array
 (
     'label'                   => &$GLOBALS['TL_LANG']['tl_style']['remark_icon'],
-    'default'                 => 'info',
-    'inputType'               => 'select',
-    'options'                 => array('info', 'comment', 'warning', 'question', 'edit', 'accepted', 'add', 'cancel', 'camera', 'clock', 'lightbulb', 'lock', 'mail', 'search'),
+    'default'                 => 'show',
+    'exclude'                 => true,
+    'inputType'               => 'radioTable',
+    'options'                 => array('show', 'help', 'important', 'stop', 'error', 'edit', 'ok', 'delete', 'new', 'visible', 'featured', 'lock-locked'),
+    'eval'                    => array('cols'=>12),
     'reference'               => &$GLOBALS['TL_LANG']['tl_style']['be_remark'],
-    'sql'                     => "varchar(255) NOT NULL default 'info'"
+    'sql'                     => "varchar(16) NOT NULL default 'show'"
 );
 
 $GLOBALS['TL_DCA']['tl_style']['fields']['remark_text'] = array
