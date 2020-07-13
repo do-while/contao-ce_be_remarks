@@ -1,1 +1,3 @@
-<?php $this->showTemplateVars(); ?>
+<?php if(!empty($this->html)): ?>
+<?= $this->html ?>
+<?php endif; ?>
