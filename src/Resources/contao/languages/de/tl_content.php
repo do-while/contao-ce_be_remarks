@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @copyright  Softleister 2010-2017
+ * @copyright  Softleister 2010-2020
  * @author     Softleister <info@softleister.de>
  * @package    ce_be_remarks - Backend Remarks
  * @license    LGPL
@@ -29,3 +29,8 @@ $GLOBALS['TL_LANG']['tl_content']['be_remark']['new']         = 'Hinzufügen';
 $GLOBALS['TL_LANG']['tl_content']['be_remark']['visible']     = 'Sichtbar';
 $GLOBALS['TL_LANG']['tl_content']['be_remark']['featured']    = 'Favorit';
 $GLOBALS['TL_LANG']['tl_content']['be_remark']['lock-locked'] = 'Sperre';
+
+/**
+ * Legends
+ */
+$GLOBALS['TL_LANG']['tl_content']['fe_legend'] = 'Frontend HTML-Code, z.B. öffnende oder schließende DIVs für Blockformatierungen';

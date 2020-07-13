@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @copyright  Softleister 2010-2017
+ * @copyright  Softleister 2010-2020
  * @author     Softleister <info@softleister.de>
  * @package    ce_be_remarks - Backend Remarks
  * @license    LGPL
@@ -21,14 +21,14 @@ class ContentBeRemarks extends \ContentElement
      * Template
      * @var string
      */
-    protected $strTemplate = 'ce_fe_remarks';     // leeres Template = keinen Code für das Frontend
+    protected $strTemplate = 'ce_fe_remarks';     // Template für Frontend
 
     protected function compile()
     {
         if( TL_MODE == 'BE' ) {
           $this->strTemplate = 'ce_be_remarks';
           $this->Template = new \FrontendTemplate($this->strTemplate);
-          $this->Template->setData($this->arrData);
         }
+        $this->Template->setData($this->arrData);
     }
 }

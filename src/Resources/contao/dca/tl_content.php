@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @copyright  Softleister 2010-2017
+ * @copyright  Softleister 2010-2020
  * @author     Softleister <info@softleister.de>
  * @package    ce_be_remarks - Backend Remarks
  * @license    LGPL
@@ -10,7 +10,7 @@
  */
 
 
-$GLOBALS['TL_DCA']['tl_content']['palettes']['be_remarks'] = '{type_legend},type,headline;{text_legend},remark_icon,text;';
+$GLOBALS['TL_DCA']['tl_content']['palettes']['be_remarks'] = '{type_legend},type,headline;{text_legend},remark_icon,text;{fe_legend:hide},html;';
 
 $GLOBALS['TL_DCA']['tl_content']['fields']['remark_icon'] = array
 (

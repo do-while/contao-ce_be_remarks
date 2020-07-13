@@ -10,10 +10,13 @@ ein auswählbares Symbol.
 
 Die Backend Hinweise haben keine Auswirkung auf die Darstellung im Frontend!
 
+Ab **Version 1.1** wurde ein Codebereich für HTML ergänzt. Hier hat man die Möglichkeit für das Frontend Auszeichnungen, wie öffnende oder schließende DIVs, einzutragen. Ich habe gemerkt, dass ich oft hinter den Anweisungen für den Redakteur mit `<div class="foo">` einen Block eröffnet habe. Dieser Quellcode stand dann sichtbar für den Redakteur im Backend und mußte extra erklärt werden. Mit dem neuen Feature lassen sich diese HTML-Contentelemente hinter den Anweisungen oder Hinweisen verstecken.
+
 
 
 Version:<br>
-* 1.0.0 stable - Version für Contao 4.4
+* 1.1.0 - 2020-06-13 - HTML-Codebereich für Frontend-Ausgabe ergänzt
+* 1.0.0 - 2017-08-06 - Version für Contao 4.4
 
 
 ___
@@ -28,7 +31,9 @@ generator messages or explanations. For classification, each entry has a selecta
 
 The backend notes have no effect on the output in the frontend!
 
+Starting with **Version 1.1** a code area for HTML was added. Here you have the possibility to enter markups for the frontend, like opening or closing DIVs. I noticed that I often opened a block with `<div class="foo">` behind the instructions for the editor. This source code was then visible for the editor in the backend and had to be explained separately. With the new feature these HTML content elements can be hidden behind the instructions or hints.
+
 
 ___
-Softleister - 2017-08-06
+Softleister - 2020-06-13
 
