@@ -1,8 +1,7 @@
 <?php
 
 /**
- * @copyright  Softleister 2010-2017
- * @author     Softleister <info@softleister.de>
+ * @copyright  Softleister 2010-2024
  * @package    ce_be_remarks - Backend Remarks
  * @license    LGPL
  * @see        https://github.com/do-while/contao-ce_be_remarks
@@ -11,21 +10,38 @@
 
 namespace Softleister\Ce_be_remarks;
 
+use Contao\System;
+use Contao\Widget;
+
 
 /**
  * Class FormBeRemarks
  */
-class FormBeRemarks extends \Widget
+class FormBeRemarks extends Widget
 {
     /**
      * Template
      */
     protected $strTemplate = 'form_remarks';
+    protected $isBackend;
+
+
+    /**
+     * Import the Config instance
+     */
+    public function __construct( $arrAttributes = null )
+    {
+        parent::__construct( $arrAttributes );
+
+        $request = System::getContainer( )->get( 'request_stack' )->getCurrentRequest( );
+        $this->isBackend = $request && System::getContainer( )->get( 'contao.routing.scope_matcher' )->isBackendRequest( $request );
+    }
+
 
     /**
      * Do not validate
      */
-    public function validate()
+    public function validate( )
     {
         return;
     }
@@ -40,7 +56,7 @@ class FormBeRemarks extends \Widget
      */
     public function parse( $arrAttributes = null )
     {
-        if( TL_MODE == 'BE' ) {
+        if( $this->isBackend ) {
             $this->html = htmlspecialchars( $this->html );
         }
 
@@ -53,27 +69,10 @@ class FormBeRemarks extends \Widget
      *
      * @return string The widget markup
      */
-    public function generate()
+    public function generate( )
     {
-        $strBuffer = '';    // kein Output im Frontend äöü
-
-        if( TL_MODE == 'BE' ) {
-            $headline = deserialize( $this->headline );
-
-            $strBuffer = "\n\n" . '<!--- ce_be_remarks -->' . "\n"
-                       . '<div class="' . $this->class . ' block"' . $this->cssID . ' style="' . $this->style . ' border:1px solid #8ab858; padding:5px; background-color:#fffeef;">' . "\n\n"
-                       . '<div class="image_container float_left" style="padding-right:20px; float:left;">' . "\n"
-                       . '<img src="system/themes/flexible/icons/' . $this->remark_icon . '.svg" width="48" height="48" title="' . $GLOBALS['TL_LANG']['tl_form_field']['be_remark'][$this->remark_icon] . '" alt="" />' . "\n"
-                       . '</div>' . "\n\n";
-
-            if( $headline['value'] ) {
-                $strBuffer .= '<' . $headline['unit'] . '>' . $headline['value'] . '</' . $headline['unit'] . '>';
-            }
-            $strBuffer .= $this->text . "\n"
-                       . '</div>' . "\n\n"
-                       . '<!--- END OF ce_be_remarks -->' . "\n\n";
-        }
-        return $strBuffer;
+        return '';          // kein Output im Frontend
     }
+
 
 }

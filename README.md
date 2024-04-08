@@ -4,9 +4,8 @@ Backend-Formularfeld oder im CSS-Editor anlegen.**
 
 Diese Erweiterung stellt ein zusätzliches Content-Element "Backend Hinweise" und ein zusätzliches 
 Formularelement zur Verfügung. Diese Elemente erzeugen **keine** Ausgabe im Frontend, sondern sollen 
-die Möglichkeit bieten, Redakteuren und Bearbeitern direkt im Artikel, im Contao CSS Editor oder im 
-Formulargenerator Nachrichten oder Erklärungen anzuzeigen. Zur Klassifizierung erhält jeder Eintrag 
-ein auswählbares Symbol.
+die Möglichkeit bieten, Redakteuren und Bearbeitern direkt im Artikel, im Formulargenerator Nachrichten 
+oder Erklärungen anzuzeigen. Zur Klassifizierung erhält jeder Eintrag ein auswählbares Symbol.
 
 Die Backend Hinweise haben keine Auswirkung auf die Darstellung im Frontend!
 
@@ -15,6 +14,7 @@ Ab **Version 1.1** wurde ein Codebereich für HTML ergänzt. Hier hat man die M�
 
 
 Version:<br>
+* 2.0.0 - 2024-04-08 - Version für Contao Version ^5.3
 * 1.1.0 - 2020-06-13 - HTML-Codebereich für Frontend-Ausgabe ergänzt
 * 1.0.0 - 2017-08-06 - Version für Contao 4.4
 
@@ -35,5 +35,5 @@ Starting with **Version 1.1** a code area for HTML was added. Here you have the 
 
 
 ___
-Softleister - 2020-06-13
+Softleister - 2024-04-08
 

@@ -1,1 +1,11 @@
 table#ctrl_remark_icon img {width:20px;height:20px;}
+
+.ce_be_remarks {
+    border: 1px solid #8ab858; 
+    padding: 5px;
+    background-color: #fffeef;
+}
+.ce_be_remarks .image_container {
+    padding-right: 20px; 
+    float: left;
+}

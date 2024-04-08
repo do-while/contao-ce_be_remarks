@@ -1,8 +1,7 @@
 <?php
 
 /**
- * @copyright  Softleister 2010-2017
- * @author     Softleister <info@softleister.de>
+ * @copyright  Softleister 2010-2024
  * @package    ce_be_remarks - Backend Remarks
  * @license    LGPL
  * @see	       https://github.com/do-while/contao-ce_be_remarks
@@ -20,5 +19,4 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
  */
 class SoftleisterCe_be_remarksBundle extends Bundle
 {
-
 }
