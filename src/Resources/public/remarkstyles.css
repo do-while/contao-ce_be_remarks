@@ -9,3 +9,7 @@ table#ctrl_remark_icon img {width:20px;height:20px;}
     padding-right: 20px; 
     float: left;
 }
+
+html[data-color-scheme="dark"] .ce_be_remarks {
+    background-color: #2d333b;
+}

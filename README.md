@@ -14,6 +14,7 @@ Ab **Version 1.1** wurde ein Codebereich f체r HTML erg채nzt. Hier hat man die M�
 
 
 Version:<br>
+* 2.0.1 - 2024-07-24 - Unterst체tzung Dark-Mode
 * 2.0.0 - 2024-04-08 - Version f체r Contao Version ^5.3
 * 1.1.0 - 2020-06-13 - HTML-Codebereich f체r Frontend-Ausgabe erg채nzt
 * 1.0.0 - 2017-08-06 - Version f체r Contao 4.4
@@ -35,5 +36,5 @@ Starting with **Version 1.1** a code area for HTML was added. Here you have the 
 
 
 ___
-Softleister - 2024-04-08
+Softleister - 2024-07-24
 
